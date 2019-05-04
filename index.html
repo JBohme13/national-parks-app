@@ -1,0 +1,26 @@
+<html lang='en'>
+    <head>
+        <meta charSet='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1'>
+        <title>Seach National Parks</title>
+        <script src="https://code.jquery.com/jquery-3.4.0.js" 
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" 
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Search National Parks by state</h1>
+        <form>
+            <label for='search'>State Code (ex. WA, CO, MT): </label>
+            <input name='search' id='stateCode' type='text' value='MT' required><br>
+            <label for='maxResults'>Maximum number of results: </label>
+            <input id='maxResults' type='text' value='10'><br>
+            <input type='submit' name='submit'>
+        </form>
+        <section id='results'>
+            <ul id='results-list'>
+            </ul>
+        </section>
+        <p class='errorMessage'></p>
+        <script src='index.js'></script>
+    </body>
+</html>
